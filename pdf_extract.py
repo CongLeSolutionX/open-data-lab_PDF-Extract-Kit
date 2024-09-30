@@ -158,7 +158,7 @@ if __name__ == '__main__':
         a = time.time()  
         dataset = MathDataset(mf_image_list, transform=mfr_transform)
 
-        dataloader = DataLoader(dataset, batch_size=args.batch_size, num_workers=0)
+        dataloader = DataLoader(dataset, batch_size=128, num_workers=0)
 
         mfr_res = []
         for imgs in dataloader:
